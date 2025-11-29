@@ -125,7 +125,7 @@ while True:
                     3: 'пицца 4 сыра - 500р',
                     4: 'пицца с ананасами - 650р',
                     5: 'пицца с креветками - 700р',
-                    6: 'кастомная пицца - 500'
+                    6: 'кастомная пицца - 400р'
                 }
             else:
                 return {
@@ -134,7 +134,7 @@ while True:
                     3: 'пицца 4 сыра - 600р',
                     4: 'пицца с ананасами - 750р',
                     5: 'пицца с креветками - 800р',
-                    6: 'кастомная пицца - 400'
+                    6: 'кастомная пицца - 500р'
 
                 }
 
@@ -256,7 +256,7 @@ while True:
                             end_customP_while = int(input('Что хотите сделать: '))
                             if end_customP_while == 1:
                                 custom_run = False
-                                current_custom_pizza = (f'кастомная пицца - {base_pizza_price}')
+                                current_custom_pizza = (f'кастомная пицца - {base_pizza_price}р')
                                 pizza_orders.append(current_custom_pizza)
                             else:
                                 custom_run = True
@@ -306,6 +306,7 @@ while True:
                 else:
                     print('Хорошего дня!')
                     running = False
+        break
     elif app_choice == '2':
         print(f"{current_user} вышел из аккаунта.")
         current_user = None
